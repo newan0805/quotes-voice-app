@@ -1,8 +1,7 @@
-// src/app/page.js
-"use client";
+// src/app/pages/index.js
 import { useState } from "react";
-import VoiceRecorder from "./components/VoiceRecorder";
-import QuoteCard from "./components/QuoteCard";
+import VoiceRecorder from "../components/VoiceRecorder";
+import QuoteCard from "../components/QuoteCard";
 
 export default function Home() {
   const [quotes, setQuotes] = useState([]);
@@ -10,7 +9,7 @@ export default function Home() {
   const handleSaveQuote = (text) => {
     const newQuote = {
       text,
-      audioUrl: "", // Placeholder for audio URL
+      audioUrl: "", // Placeholder, add audio recording later if needed
     };
     setQuotes([newQuote, ...quotes]);
   };

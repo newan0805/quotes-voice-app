@@ -1,0 +1,27 @@
+quotes-voice-app/
+├── .next/                     # Generated during build; stores Next.js output files
+├── node_modules/              # Node.js dependencies
+├── public/                    # Public assets, including icons and manifest for PWA
+│   ├── favicon.ico            # Favicon for the app
+├── src/
+│   ├── app/
+│   │   ├── components/        # Reusable UI components
+│   │   │   ├── VoiceRecorder.js   # Voice recording and transcription component
+│   │   │   └── QuoteCard.js       # Component to display quotes with audio playback
+│   │   ├── fonts/             # Custom font files (if any)
+│   │   ├── pages/             # Next.js pages
+│   │   │   ├── api/           # API routes (e.g., for file upload handling)
+│   │   │   └── index.js       # Main entry page for the app
+│   │   ├── styles/            # CSS files and Tailwind configuration
+│   │   │   └── globals.css    # Global styles with Tailwind CSS imports
+│   │   ├── layout.js          # Root layout component for Next.js pages
+│   │   └── page.js            # Main page component, usually the home screen
+├── .eslintrc.json             # ESLint configuration file
+├── .gitignore                 # Specifies files to ignore in Git
+├── jsconfig.json              # JavaScript project configuration for imports
+├── next.config.mjs            # Next.js configuration file (with PWA settings)
+├── package.json               # Project dependencies and scripts
+├── package-lock.json          # Locks dependency versions for reproducibility
+├── postcss.config.mjs         # Configuration for PostCSS (used by Tailwind)
+├── README.md                  # Project documentation
+└── tailwind.config.js         # Tailwind CSS configuration file
